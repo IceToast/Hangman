@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Hangman for beginners - Github</title>
+    <script type="text/javascript" src="code.js"></script>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h1>Hangman for beginners</h1>
+    <div id="letterBoxesContainer">
+    </div>
+
+    <div id="guessContainer">
+    </div>
+
+    <div id="alertBox" class="alertBox">
+        <div id="alertBoxWrapperID" class="alertBoxWrapper">
+            <header id="alertHeaderID" class="alertHeader"></header>
+            <div id="alertContentID" class="">
+                <p id="alertMessageID" class="alertMessage"></p>
+                <button id="restartGame" class="restartButton" onclick="restartGame()">Restart Game</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="hangmanContainer">
+        <div class="svgContainer">
+            <svg id="hangmanSVG" width="350 " height="300">
+                <line id="line1" x1="30" x2="130" y1="280" y2="280" stroke="white" style="display: none;"
+                    stroke-width="3" />
+                <line id="line2" x1="80" x2="80" y1="280" y2="20" stroke="white" style="display: none;"
+                    stroke-width="3" />
+                <line id="line3" x1="80" x2="220" y1="20" y2="20" stroke="white" style="display: none;"
+                    stroke-width="3" />
+                <line id="line4" x1="120" x2="80" y1="20" y2="60" stroke="white" style="display: none;"
+                    stroke-width="3" />
+                <line id="line5" x1="220" x2="220" y1="20" y2="80" stroke="white" style="display: none;"
+                    stroke-width="3" />
+                <circle id="head" cx="220" cy="100" r="20" stroke="white" fill="transparent" style="display: none;"
+                    stroke-width="3" />
+                <line id="line6" x1="220" x2="220" y1="120" y2="180" stroke="white" style="display: none;"
+                    stroke-width="3" />
+                <line id="line7" x1="220" x2="260" y1="130" y2="150" stroke="white" style="display: none;"
+                    stroke-width="3" />
+                <line id="line8" x1="220" x2="180" y1="130" y2="150" stroke="white" style="display: none;"
+                    stroke-width="3" />
+                <line id="line9" x1="220" x2="240" y1="180" y2="220" stroke="white" style="display: none;"
+                    stroke-width="3" />
+                <line id="line10" x1="220" x2="200" y1="180" y2="220" stroke="white" style="display: none;"
+                    stroke-width="3" />
+            </svg>
+        </div>
+    </div>
+</body>
+
+</html>

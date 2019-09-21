@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Roboto-round";
+    src: url("fonts/Roboto Round Regular.ttf");
+}
+body{
+    background-color:#e44141;
+    font-family: Roboto-round, Arial, sans-serif;
+    color: #ffffff;
+}
+h1{
+    font-size: 45;
+    text-align: center;
+}
+#letterBoxesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.letterBox{
+    background-color: #ffffff;
+    display: inline-block;
+    color: #e44141;
+    min-width: 50px;
+    height: 50px;
+    margin: 2px;
+    font-size: 30;
+    vertical-align: middle; 
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px 10px;
+    border: 0;
+}
+.letterBox:disabled{
+    background-color: #e44141;
+    color: #ffffff;
+    border: #ffffff solid;
+    border-width: 1px;
+}
+#guessContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.character{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 50;
+    width: 43px;
+    height: 50px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    border-bottom: #ffffff solid;
+    border-width: 3px;
+}
+#hangmanContainer{
+    text-align: center;
+}
+#hangmanSVG{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 50px auto;
+    border: 2px dashed;
+}
+#show{
+    color: #e44141;
+    font-size: 30;
+    border: 0;
+    background-color: #ffffff;
+    margin: 10 auto;
+    border-radius: 5px 10px;
+}
+
+.alertBox {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+#alertBoxWrapperID{
+    height: 0px;
+    opacity: 0;
+    transition: all .75s ease;
+    width: 50%
+}
+#alertBoxWrapperID.show {
+    opacity: 1;
+  }
+.alertBoxWrapper{
+    position: relative;
+    animation:  0.4s;
+    margin: 0 auto;
+    width: 50%; 
+    padding: 20px;
+    vertical-align: middle;
+    font-size: 30px;
+    text-align: center;
+}
+.alertHeaderWin{
+    background-color: #00e676;
+    height: 50px;
+    vertical-align: inherit;
+    line-height: 50px;
+    padding: 5px 16px;
+}
+.alertHeaderLose{
+    background-color: #f44336;
+    height: 50px;
+    vertical-align: inherit;
+    line-height: 50px;
+    padding: 5px 16px;
+}
+.alertMessage {
+    background-color: #ffffff;
+    color: #000000;
+    height: 100px;
+    margin: 0;
+    vertical-align: inherit;
+    text-align: left;
+    font-size: 18;
+    padding: 16px;
+}
+#restartgame{
+    height: 50px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 0;
+    width: 100%;
+    color: #ffffff;
+    font-size: 25;
+}
+#restartGame.win{
+    background-color: #00e676;
+}
+#restartGame.lose{
+    background-color: #f44336;
+}
